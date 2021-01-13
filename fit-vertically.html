@@ -12,7 +12,7 @@
                 padding: 10px;
                 height: 100vh;
                 display: grid;
-                grid-template-columns: min-content auto;
+                grid-template-columns: min-content auto min-content;
                 grid-template-rows: auto min-content min-content;
                 column-gap: 10px;
                 row-gap: 10px;
@@ -33,9 +33,17 @@
                 border: 5px solid #4C9990;
                 overflow: scroll;
             }
+            .world-selector {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                border: 5px solid #4C9990;
+                width: 100px;
+            }
             .program-area {
                 grid-column-start: 2;
-                grid-column-end: 3;
+                grid-column-end: 4;
                 grid-row-start: 2;
                 grid-row-end: 3;
                 border: 5px solid #4C9990;
@@ -43,7 +51,7 @@
             }
             .program-controls {
                 grid-column-start: 1;
-                grid-column-end: 3;
+                grid-column-end: 4;
                 grid-row-start: 3;
                 grid-row-end: 4;
                 border: 5px solid #4C9990;
@@ -61,6 +69,7 @@
             <div class="scene-container">
                 <div class="scene"></div>
             </div>
+            <div class="world-selector"></div>
             <div class="program-area"></div>
             <div class="program-controls"></div>
         </div>

@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
     height: 100vh;
     display: grid;
-    grid-template-columns: min-content auto min-content;
+    grid-template-columns: min-content 1fr min-content;
     grid-template-rows: min-content auto min-content min-content;
     column-gap: 10px;
     row-gap: 10px;

@@ -1,10 +1,19 @@
 /* assuming a tile is 100px width */
 
+.green-border {
+    border: 5px solid #4C9990;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
+
 .container {
     box-sizing: border-box;
     height: 100vh;
@@ -14,6 +23,7 @@ body {
     column-gap: 10px;
     row-gap: 10px;
 }
+
 .app-controls {
     box-sizing: border-box;
     height: 70px;
@@ -24,33 +34,31 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 140px;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     display: flex;
     justify-content: flex-end;
 }
+
 .app-control-1 {
     width: 90px;
     height: 30px;
-    border: 5px solid #4C9990;
     border-radius: 20px;
 }
+
 .app-control-2 {
     width: 90px;
     height: 30px;
-    border: 5px solid #4C9990;
     margin-left: 15px;
     border-radius: 20px;
 }
+
 .actions-panel {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     width: 230px;
 }
+
 .scene-container {
     display: flex;
     justify-content: flex-end;
@@ -59,45 +67,45 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     overflow: scroll;
 }
+
 .scene-resize-options {
     position: absolute;
     display: flex;
     flex-direction: column;
     padding-right: 10px;
 }
+
 .scene-resize-button {
     margin-top: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
+
 .world-selector {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     width: 120px;
 }
+
 .program-area {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     height: 200px;
 }
+
 .scene {
     position: absolute;
     width: 1200px;
     height: 600px;
 }
+
 .program-controls {
     box-sizing: border-box;
     grid-column-start: 1;
@@ -105,8 +113,6 @@ body {
     grid-row-start: 4;
     grid-row-end: 5;
     height: 90px;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
 }
 
 /* 2000 resolution or higher */
@@ -143,6 +149,7 @@ body {
         width: 120px;
     }
 }
+
 /* mobile  */
 @media only screen and (max-width: 700px) {
     .container {
@@ -164,8 +171,6 @@ body {
         margin-right: 15px;
         grid-column-start: 1;
         grid-column-end: 4;
-        border: 5px solid #4C9990;
-        border-radius: 15px;
         overflow: scroll;
     }
     .actions-panel {
@@ -175,8 +180,6 @@ body {
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
-        border: 5px solid #4C9990;
-        border-radius: 15px;
         width: auto;
         height: 120px;
     }
@@ -187,8 +190,6 @@ body {
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
-        border: 5px solid #4C9990;
-        border-radius: 15px;
         width: auto;
         height: 120px;
     }
@@ -199,8 +200,6 @@ body {
         grid-column-end: 4;
         grid-row-start: 5;
         grid-row-end: 6;
-        border: 5px solid #4C9990;
-        border-radius: 15px;
         height: 200px;
     }
     .program-controls {
@@ -226,8 +225,6 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 115px;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     display: flex;
     justify-content: flex-end;
 }
@@ -235,14 +232,12 @@ body {
 .app-control-1--expanded {
     width: 90px;
     height: 30px;
-    border: 5px solid #4C9990;
     border-radius: 20px;
 }
 
 .app-control-2--expanded {
     width: 90px;
     height: 30px;
-    border: 5px solid #4C9990;
     margin-left: 15px;
     border-radius: 20px;
 }
@@ -253,8 +248,6 @@ body {
     justify-content: flex-end;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     overflow: scroll;
 }
 
@@ -263,8 +256,6 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     height: 90px;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
 }
 
 /* Scene minimized mode */
@@ -278,6 +269,7 @@ body {
     column-gap: 10px;
     row-gap: 10px;
 }
+
 .app-controls--minimized {
     box-sizing: border-box;
     height: 70px;
@@ -288,31 +280,28 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 140px;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     display: flex;
     justify-content: flex-end;
 }
+
 .app-control-1--minimized {
     width: 90px;
     height: 30px;
-    border: 5px solid #4C9990;
     border-radius: 20px;
 }
+
 .app-control-2--minimized {
     width: 90px;
     height: 30px;
-    border: 5px solid #4C9990;
     margin-left: 15px;
     border-radius: 20px;
 }
+
 .actions-panel--minimized {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     width: 230px;
 }
 
@@ -323,8 +312,6 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     min-width: 200px;
     max-width: 300px;
     height: 150px;
@@ -336,8 +323,6 @@ body {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     width: 120px;
     height: 150px;
 }
@@ -347,8 +332,6 @@ body {
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
     min-width: 120px;
     height: 150px;
 }
@@ -358,14 +341,13 @@ body {
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
 }
 
 .scene {
     width: 1200px;
     height: 600px;
 }
+
 .program-controls--minimized {
     box-sizing: border-box;
     grid-column-start: 1;
@@ -373,7 +355,4 @@ body {
     grid-row-start: 4;
     grid-row-end: 5;
     height: 90px;
-    border: 5px solid #4C9990;
-    border-radius: 15px;
 }
-

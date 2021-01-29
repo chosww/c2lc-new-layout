@@ -60,8 +60,7 @@ body {
 }
 
 .scene-container {
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
     min-height: 200px;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -72,9 +71,10 @@ body {
 
 .scene-resize-options {
     position: absolute;
+    top: 10px;
+    right: 10px;
     display: flex;
     flex-direction: column;
-    padding-right: 10px;
 }
 
 .scene-resize-button {
@@ -101,7 +101,6 @@ body {
 }
 
 .scene {
-    position: absolute;
     width: 1200px;
     height: 600px;
 }
@@ -116,19 +115,33 @@ body {
 }
 
 /* 2000 resolution or higher */
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1866px) {
     .container {
-        grid-template-rows: min-content min-content 1fr min-content;
+        grid-template-columns: 1fr min-content minmax(auto, 1200px) min-content 1fr;
+        grid-template-rows: min-content minmax(auto, 600px) 1fr min-content;
+    }
+    .app-controls {
+        grid-column-start: 1;
+        grid-column-end: 6;
     }
     .actions-panel {
-        margin-left: 25vw;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .scene-container {
+        max-width: 1200px;
+        max-height: 600px;
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
     .world-selector {
-        margin-right: 25vw;
-        height: auto;
+        grid-column-start: 4;
+        grid-column-end: 5;
     }
     .program-area {
-        margin-right: 25vw;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        min-height: 200px;
         height: auto;
     }
     .app-control-2 {
@@ -136,6 +149,10 @@ body {
     }
     .app-controls {
         padding-right: 0;
+    }
+    .program-controls {
+        grid-column-start: 1;
+        grid-column-end: 6;
     }
 }
 

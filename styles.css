@@ -165,14 +165,14 @@ body {
         margin-left: 15px;
         margin-right: 15px;
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 6;
         overflow: scroll;
     }
     .actions-panel {
         margin-left: 10px;
         margin-right: 10px;
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 6;
         grid-row-start: 3;
         grid-row-end: 4;
         width: auto;
@@ -182,7 +182,7 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 6;
         grid-row-start: 4;
         grid-row-end: 5;
         width: auto;
@@ -192,7 +192,7 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 6;
         grid-row-start: 5;
         grid-row-end: 6;
         height: 200px;
